@@ -1,0 +1,147 @@
+html,
+body {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+header img,
+.sidebar img {
+  border-radius: 100%;
+}
+strong {
+  color: white;
+}
+header p {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+}
+.bt {
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 50px;
+}
+hr {
+  width: 100%;
+}
+h3 {
+  /* padding-left: 5%; */
+  padding-top: 5%;
+  margin: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+tr :nth-child(odd) {
+  text-align: right;
+  vertical-align: text-top;
+  padding-right: 5px;
+}
+a {
+  color: grey;
+}
+td {
+  padding-bottom: 20px;
+}
+
+input,
+textarea {
+  border: 0px;
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.ikonkes {
+  font-size: 30px;
+}
+.recent-work {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 0;
+}
+.kontaktai {
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+}
+.sidebar {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  .recent-work {
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
+  }
+
+  button {
+    width: 160px;
+  }
+  .kontaktai {
+    flex-direction: row;
+  }
+  input {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 980px) {
+  header,
+  footer {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    width: 25%;
+    height: 90vh;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  main {
+    padding: 1%;
+    width: 75%;
+  }
+  .sidetop,
+  .sidebottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .sidetop p {
+    text-align: right;
+  }
+}

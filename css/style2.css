@@ -1,0 +1,220 @@
+html,
+body {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header img,
+.sidebar img {
+  border-radius: 100%;
+}
+
+strong {
+  color: white;
+}
+
+header p {
+  text-align: center;
+}
+
+.bt {
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 50px;
+}
+
+hr {
+  width: 100%;
+}
+
+h3 {
+  /* padding-left: 5%; */
+  padding-top: 5%;
+  margin: 0;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+tr :nth-child(odd) {
+  text-align: right;
+  vertical-align: text-top;
+  padding-right: 5px;
+}
+
+a {
+  color: grey;
+}
+
+td {
+  padding-bottom: 20px;
+}
+
+input,
+textarea {
+  border: 0px;
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.ikonkes {
+  font-size: 30px;
+}
+
+.recent-work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  padding: 0;
+}
+
+.kontaktai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6%;
+}
+
+.sidebar {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .recent-work {
+    -ms-grid-columns: 47% 47%;
+        grid-template-columns: 47% 47%;
+    -webkit-column-gap: 6%;
+            column-gap: 6%;
+  }
+  button {
+    width: 160px;
+  }
+  .kontaktai {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  input {
+    width: 47%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  header,
+  footer {
+    display: none;
+  }
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 25%;
+    height: 90vh;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main {
+    padding: 1%;
+    width: 75%;
+  }
+  .sidetop,
+  .sidebottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .sidetop p {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
